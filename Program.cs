@@ -5,28 +5,17 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Cria uma nova instância de FileManager
+        FileManager FileManager = new FileManager();
+
+        // Cria uma nova instância de Menu
         Menu menu = new Menu();
+
+        // Exibe o menu de seleção de classe e lê a opção escolhida pelo usuário
         menu.SelectClass();
         menu.menu = char.Parse(Console.ReadLine().ToUpper());
-        menu.SelectFuncion();
-        menu.op = int.Parse(Console.ReadLine());
 
-        if (menu.op == 1)
-        {
-            switch (menu.menu)
-            {
-                case 'A':
-                    Console.WriteLine("Dados dos Alunos da Classe A");
-                    break;
-                case 'B':
-                    Console.WriteLine("Dados dos Alunos da Classe B");
-                    break;
-                case 'C':
-                    Console.WriteLine("Dados dos Alunos da Classe C");
-                    break;
-                default: Console.WriteLine("Dados invalidos");
-                    break;
-            }
-        }
+        // Chama o método SelectFuncion da instância de Menu, passando como argumento a instância de FileManager
+        menu.SelectFuncion(FileManager);
     }
 }
