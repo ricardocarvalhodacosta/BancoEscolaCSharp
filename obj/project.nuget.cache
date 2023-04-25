@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "c27cOjFgY1LzgV0svvT2IdV8g4DP8ackOILaf2SKUhVS1SWdJ7ehmezNHAe7/l4eIWecbDUxAkVb5Fdv5ubdOA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Estudos C#\\source\\repos\\Escola\\Escola.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Estudos C#\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
