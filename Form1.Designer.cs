@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             matricula = new Label();
             aluno = new Label();
             nota1 = new Label();
@@ -37,12 +38,18 @@
             textNome = new TextBox();
             textNota1 = new TextBox();
             textNota2 = new TextBox();
-            textMedia = new TextBox();
             gravar = new Button();
             verificar = new Button();
             fechar = new Button();
             sala = new Label();
             textSala = new TextBox();
+            dataGridView1 = new DataGridView();
+            inserir = new Button();
+            dadosBindingSource = new BindingSource(components);
+            dataGridView2 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dadosBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // matricula
@@ -118,16 +125,9 @@
             textNota2.Size = new Size(353, 23);
             textNota2.TabIndex = 8;
             // 
-            // textMedia
-            // 
-            textMedia.Location = new Point(126, 173);
-            textMedia.Name = "textMedia";
-            textMedia.Size = new Size(354, 23);
-            textMedia.TabIndex = 9;
-            // 
             // gravar
             // 
-            gravar.Location = new Point(25, 213);
+            gravar.Location = new Point(144, 213);
             gravar.Name = "gravar";
             gravar.Size = new Size(109, 23);
             gravar.TabIndex = 11;
@@ -171,18 +171,54 @@
             textSala.Size = new Size(353, 23);
             textSala.TabIndex = 16;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(25, 289);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(454, 359);
+            dataGridView1.TabIndex = 17;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // inserir
+            // 
+            inserir.Location = new Point(25, 213);
+            inserir.Name = "inserir";
+            inserir.Size = new Size(109, 23);
+            inserir.TabIndex = 18;
+            inserir.Text = "Inserir Dados";
+            inserir.UseVisualStyleBackColor = true;
+            inserir.Click += inserir_Click;
+            // 
+            // dadosBindingSource
+            // 
+            dadosBindingSource.DataSource = typeof(Dados);
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(126, 164);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowTemplate.Height = 25;
+            dataGridView2.Size = new Size(353, 43);
+            dataGridView2.TabIndex = 19;
+            dataGridView2.CellContentClick += dataGridView2_CellContentClick_1;
+            // 
             // bancoescola
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
-            ClientSize = new Size(503, 292);
+            ClientSize = new Size(503, 660);
+            Controls.Add(dataGridView2);
+            Controls.Add(inserir);
+            Controls.Add(dataGridView1);
             Controls.Add(textSala);
             Controls.Add(sala);
             Controls.Add(fechar);
             Controls.Add(verificar);
             Controls.Add(gravar);
-            Controls.Add(textMedia);
             Controls.Add(textNota2);
             Controls.Add(textNota1);
             Controls.Add(textNome);
@@ -194,6 +230,9 @@
             Controls.Add(matricula);
             Name = "bancoescola";
             Text = "Banco de Dados Escola";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dadosBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -209,11 +248,14 @@
         private TextBox textNome;
         private TextBox textNota1;
         private TextBox textNota2;
-        private TextBox textMedia;
         private Button gravar;
         private Button verificar;
         private Button fechar;
         private Label sala;
         private TextBox textSala;
+        private DataGridView dataGridView1;
+        private Button inserir;
+        private BindingSource dadosBindingSource;
+        private DataGridView dataGridView2;
     }
 }

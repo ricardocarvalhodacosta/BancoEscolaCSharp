@@ -1,1 +1,10 @@
-{"Matricula":1,"Sala":"A","Aluno":"Ricardo Carvalho da Costa","Nota1":10.0,"Nota2":10.0,"Media":10.0}
+[
+  {
+    "Matricula": 1,
+    "Sala": "3º A",
+    "Aluno": "Ricardo",
+    "Nota1": 10.0,
+    "Nota2": 10.0,
+    "Media": 0.0
+  }
+]
