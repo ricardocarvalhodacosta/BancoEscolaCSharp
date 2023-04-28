@@ -6,5 +6,29 @@
     "Nota1": 10.0,
     "Nota2": 10.0,
     "Media": 0.0
+  },
+  {
+    "Matricula": 2,
+    "Sala": "3º A",
+    "Aluno": "Amanda",
+    "Nota1": 10.0,
+    "Nota2": 10.0,
+    "Media": 0.0
+  },
+  {
+    "Matricula": 3,
+    "Sala": "3º A",
+    "Aluno": "Michele",
+    "Nota1": 10.0,
+    "Nota2": 10.0,
+    "Media": 0.0
+  },
+  {
+    "Matricula": 4,
+    "Sala": "3º A",
+    "Aluno": "Diego",
+    "Nota1": 10.0,
+    "Nota2": 10.0,
+    "Media": 0.0
   }
 ]
