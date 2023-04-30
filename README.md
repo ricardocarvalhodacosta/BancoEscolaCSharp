@@ -18,3 +18,4 @@ https://user-images.githubusercontent.com/115588683/234432392-b7a83ce4-b2f1-45cd
 - Modificado do formato Console para Windows Forms;
 - Removido a criação do arquivo de banco de dados em TXT;
 - Adicionado arquivo .JSON para armazenamento do banco de dados;
+- Adicionado formato para adicionar diversos dados de uma só vez;
